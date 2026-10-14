@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="description" content="PRIME ELITE - Premium Multi-Book Digital Reading Platform" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Google Fonts for Devanagari with display=swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>PRIME ELITE</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('Service Worker registration skipped:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

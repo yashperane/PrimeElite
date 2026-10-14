@@ -1,0 +1,13 @@
+{
+  "name": "prime-elite",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build",
+    "build:client": "cd client && npm run build",
+    "start": "cd server && npm start"
+  }
+}
